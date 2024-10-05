@@ -4,13 +4,13 @@ public class Bubblesort {
         
     public static void main(String[] args){
         
-        int[] numeros = {8,9,3,5,1};
+        int[] numeros = {1,6,7,4,8,10};
         int aux=0;
         int i;
         int j;
         
-        for(i = 0; i<5; i++){
-            for(j=0;j<4;j++){
+        for(i = 0; i<numeros.length; i++){
+            for(j=0;j<numeros.length-1;j++){
                 if(numeros[j]>numeros[j+1]){
                     aux = numeros[j];
                     numeros[j] = numeros[j+1];
@@ -19,7 +19,7 @@ public class Bubblesort {
             }
         }
         
-        for(i=0;i<5;i++){
+        for(i=0;i<numeros.length;i++){
             System.out.print(" "+numeros[i]);
         }
             
